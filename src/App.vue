@@ -4,13 +4,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper">
-      <!-- <h1>Horroreview</h1> -->
-    </div>
-    <nav>
+    <nav class="navbar">
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/gifs">Gifs</RouterLink>
       <RouterLink to="/reviews">Reviews</RouterLink>
     </nav>
   </header>
@@ -21,31 +18,26 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
+  position: relative;
   line-height: 1.5;
-  display: flex;
+  display: block;
   place-content: start center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 1rem;
+  margin-left: auto;
+  margin-top: 10px;;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+} */
 </style>

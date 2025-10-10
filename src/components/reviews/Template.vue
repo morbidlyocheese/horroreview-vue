@@ -15,18 +15,18 @@
 </template>
 
 <script>
-    import coverImg from '../../assets/covers/escape-room-2-poster.jpg'
-    import letterboxdIcon from '../../assets/letterboxd.svg'
+    import coverImg from '../../assets/covers/'
+    import letterboxdIcon from '../../assets/'
 
     export default {
         data() {
             return {
-                cover: 'escape room 2 movie poster',
+                cover: 'poster',
                 img: coverImg,
-                title: 'Escape Room: Tournament Of Champions',
-                text: `I feel like the like back story of this film was kind of good? But I also just feel like they dragged it on.`,
+                title: '',
+                text: ``,
                 stars: '★★½☆☆',
-                letterboxd: 'https://letterboxd.com/morbidlyocheese/film/escape-room-tournament-of-champions/',
+                letterboxd: 'https://letterboxd.com/morbidlyocheese/film/',
                 linkIcon: letterboxdIcon,
                 fable: ''
             }

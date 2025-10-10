@@ -1,7 +1,6 @@
 <template>
     <div>
         <h1>{{ title }} by {{ author }}</h1>
-        <!-- <img alt={{ cover }} class="cover-img" src={{ src }} width="125" height="125" /> -->
         <div>
             <p class="text">{{ text }}</p>
         </div>
@@ -9,6 +8,8 @@
 </template>
 
 <script>
+    import coverImg from '../../assets/covers/'
+
     export default {
         data() {
             return {
@@ -16,6 +17,7 @@
                 src: '',
                 title: 'The Slob',
                 author: 'Aaron Beauregard',
+                img: coverImg,
                 text: `
                 I was looking for a god disturbing horror book to read, as I hadn't read very many. I tend to enjoy gore films and was eager to find a book in a similar vein.
                 I don't know how I came across this book, but I am glad that I did. It is very graphic all the way through. Although at times it felt like something was missing or felt a little rushed, I enjoyed reading this. I mean mostly enjoyed given the subject matter.
