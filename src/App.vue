@@ -17,21 +17,28 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-header {
-  position: relative;
-  line-height: 1.5;
-  display: block;
-  place-content: start center;
-}
+  main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+  }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  gap: 1rem;
-  margin-left: auto;
-  margin-top: 10px;;
-}
+  header {
+    position: relative;
+    line-height: 1.5;
+    display: block;
+    place-content: start center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 1rem;
+    margin-left: auto;
+    margin-top: 10px;;
+  }
 
 /* @media (min-width: 1024px) {
   header {

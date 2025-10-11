@@ -1,10 +1,15 @@
 <template>
     <div class="links">
-        <!-- <h2>{{ name }}</h2> -->
-        <h3>Book Reviews:</h3>
-        <RouterLink class="link" to="/reviews/the-slob">The Slob</RouterLink>
-        <h3>Film Reviews:</h3>
-        <RouterLink class="link" to="/reviews/escape-room-2">Escape Room: Tournament Of Champions</RouterLink>
+        <div class="book-links">
+            <h3>Book Reviews:</h3>
+			<li v-for="link in links">
+				<RouterLink class="link" to={{ link.route }}>{{ link.title }}</RouterLink>
+			</li>
+        </div>
+        <div class="film-links">
+            <h3>Film Reviews:</h3>
+            <RouterLink class="link" to={{ films.route }}>{{ films.title }}</RouterLink>
+        </div>
     </div>
 </template>
 
@@ -12,10 +17,25 @@
 export default {
     data() {
         return {
-            name: 'Reviews',
-        }
+			books: [
+				{
+					title: 'The Slob',
+					route: '/reviews/the-slob'
+				}
+				// {
+				// 	title: '',
+				// 	route: ''
+				// },
+			]
+			// films: [
+			// 	{
+			// 		title: 'Escape Room: Tournament Of Champions',
+			// 		route: '/reviews/escape-room-2'
+			// 	},
+			// ]
     }
 }
+
 </script>
 
 <style>
@@ -29,9 +49,15 @@ export default {
 
     .links {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        gap: 10rem;
         place-items: center;
-        margin-top: 2rem;
+    }
+
+    .book-links, .film-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        place-items: center;
     }
 </style>

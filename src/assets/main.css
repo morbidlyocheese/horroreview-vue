@@ -5,21 +5,29 @@
   margin: 0 auto;
   /* padding: 2rem; */
   font-weight: normal;
+  color: #F291F0;
 }
 
-a,
-.green {
+body {
+  background-color: #19111F;
+}
+
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #F291F0;
   transition: 0.4s;
   /* padding: 3px; */
 }
 
-/* @media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+h2, h3 {
+  color: #F5A3F3;
 }
+
+a:hover {
+  color: #5B3C75;
+}
+
+/* @media (hover: hover) {
 
 @media (min-width: 1024px) {
   body {
