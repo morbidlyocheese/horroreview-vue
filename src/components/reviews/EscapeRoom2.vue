@@ -9,13 +9,13 @@
             <div class="review-text">
                 <p class="text">{{ text }}</p>
             </div>
-            <a class="letterboxd-link" :href="letterboxd" target="_blank"><img :src="linkIcon" alt="letterboxd link" width="25" height="25"></a>
+            <a id="letterboxd-link" :href="letterboxd" target="_blank"><img id="letterboxd-link" :src="linkIcon" alt="letterboxd link" width="25" height="25"></a>
         </main>
     </div>
 </template>
 
 <script>
-    import coverImg from '../../assets/covers/escape-room-2-poster.jpg'
+    import coverImg from '../../assets/covers/films/escape-room-2-poster.jpg'
     import letterboxdIcon from '../../assets/letterboxd.png'
 
     export default {
@@ -64,5 +64,14 @@
         white-space: pre-wrap;
         display: flex;
         place-content: center;
+    }
+
+    #letterboxd-link {
+        margin: 2rem;
+    }
+
+    a:hover #letterboxd-link,
+    #letterboxd-link:hover {
+        filter: invert(50%) sepia(10%) saturate(90%) contrast(30%);
     }
 </style>

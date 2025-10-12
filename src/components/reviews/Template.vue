@@ -9,7 +9,7 @@
             <div class="review-text">
                 <p class="text">{{ text }}</p>
             </div>
-            <a class="letterboxd-link" :href="letterboxd" target="_blank"><img :src="linkIcon" alt="letterboxd link" width="50" height="50"></a>
+            <a id="letterboxd-link" :href="letterboxd" target="_blank"><img id="letterboxd-link" :src="linkIcon" alt="letterboxd link" width="50" height="50"></a>
         </main>
     </div>
 </template>
@@ -60,8 +60,13 @@
         margin-top: 1rem;
     }
 
-    .letterboxd-link {
-        color: white;
+    #letterboxd-link {
+        margin: 2rem;
+    }
+
+    a:hover #letterboxd-link,
+    #letterboxd-link:hover {
+        filter: invert(50%) sepia(10%) saturate(90%) contrast(30%);
     }
 
     .text {

@@ -47,7 +47,7 @@ export default {
         list-style-type: none;
     }
 
-    h2 {
+    h3 {
         text-decoration: underline;
     }
 

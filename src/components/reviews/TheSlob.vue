@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import coverImg from '../../assets/covers/the-slob.jpg'
+    import coverImg from '../../assets/covers/books/the-slob.jpg'
     import storygraphIcon from '../../assets/thestorygraph.png'
 
     export default {
@@ -70,5 +70,14 @@
         white-space: pre-wrap;
         display: flex;
         place-content: center;
+    }
+
+    #storygraph-link {
+        margin: 2rem;
+    }
+
+    a:hover #storygraph-link,
+    #storygraph-link:hover {
+        filter: invert(50%) sepia(10%) saturate(90%) contrast(30%);
     }
 </style>
