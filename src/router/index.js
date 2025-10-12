@@ -34,6 +34,11 @@ const router = createRouter({
         path: '/reviews/escape-room-2',
         name: 'escape room 2',
         component: () => import('../components/reviews/EscapeRoom2.vue')
+    },
+    {
+        path: '/reviews/day-of-the-dead',
+        name: 'day of the dead',
+        component: () => import('../components/reviews/DayOfTheDead.vue')
     }
     ]
 })
