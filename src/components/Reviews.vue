@@ -2,13 +2,19 @@
     <div class="links">
         <div class="book-links">
             <h3>Book Reviews:</h3>
-			<li v-for="link in links">
-				<RouterLink class="link" to={{ link.route }}>{{ link.title }}</RouterLink>
-			</li>
+            <ul>
+                <li v-for="(book, index) in books" :key="`book-` + index">
+                    <RouterLink class="link" :to="book.route">{{ book.title }} by {{ book.author }}</RouterLink>
+                </li>
+            </ul>
         </div>
         <div class="film-links">
             <h3>Film Reviews:</h3>
-            <RouterLink class="link" to={{ films.route }}>{{ films.title }}</RouterLink>
+            <ul>
+                <li v-for="(film, index) in films" :key="`film-` + index">
+                    <RouterLink class="link" :to="film.route">{{ film.title }}</RouterLink>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -17,22 +23,20 @@
 export default {
     data() {
         return {
-			books: [
-				{
-					title: 'The Slob',
-					route: '/reviews/the-slob'
-				}
-				// {
-				// 	title: '',
-				// 	route: ''
-				// },
-			]
-			// films: [
-			// 	{
-			// 		title: 'Escape Room: Tournament Of Champions',
-			// 		route: '/reviews/escape-room-2'
-			// 	},
-			// ]
+            books: [
+                {
+                    title: 'The Slob',
+                    author: 'Aaron Beauregard',
+                    route: '/reviews/the-slob'
+                }
+            ],
+            films: [
+                {
+                    title: 'Escape Room: Tournament Of Champions',
+                    route: '/reviews/escape-room-2'
+                }
+            ]
+        }
     }
 }
 
