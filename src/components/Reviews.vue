@@ -43,6 +43,10 @@ export default {
 </script>
 
 <style>
+    ul {
+        list-style-type: none;
+    }
+
     h2 {
         text-decoration: underline;
     }

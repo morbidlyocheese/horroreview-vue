@@ -9,14 +9,14 @@
             <div class="review-text">
                 <p class="text">{{ text }}</p>
             </div>
-            <!-- <a class="letterboxd-link" :href="letterboxd" target="_blank"><img :src="linkIcon" alt="letterboxd link" width="50" height="50"></a> -->
+            <a :href="storygraph" target="_blank"><img id="storygraph-link" :src="linkIcon" alt="storygraph link" width="25" height="25"></a>
         </main>
     </div>
 </template>
 
 <script>
     import coverImg from '../../assets/covers/the-slob.jpg'
-    import storygraphIcon from '../../assets/thestorygraph.svg'
+    import storygraphIcon from '../../assets/thestorygraph.png'
 
     export default {
         data() {
@@ -65,10 +65,6 @@
         place-content: center;
         margin-top: 1rem;
     }
-
-    /* .letterboxd-link {
-        color: white;
-    } */
 
     .text {
         white-space: pre-wrap;

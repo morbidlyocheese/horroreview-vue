@@ -26,7 +26,7 @@
                 title: '',
                 text: ``,
                 stars: '★★½☆☆',
-                letterboxd: 'https://letterboxd.com/morbidlyocheese/film/',
+                letterboxd: '',
                 linkIcon: letterboxdIcon,
                 fable: ''
             }
