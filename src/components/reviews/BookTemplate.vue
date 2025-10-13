@@ -15,25 +15,21 @@
 </template>
 
 <script>
-    import coverImg from '../../assets/covers/books/the-slob.jpg'
+    import coverImg from '../../assets/covers/books/'
     import storygraphIcon from '../../assets/thestorygraph.png'
 
     export default {
         data() {
             return {
-                cover: 'the slob book cover',
+                cover: '',
                 src: '',
-                title: 'The Slob',
-                author: 'Aron Beauregard',
+                title: '',
+                author: '',
                 img: coverImg,
-                text: `
-                I was looking for a god disturbing horror book to read, as I hadn't read very many. I tend to enjoy gore films and was eager to find a book in a similar vein.
-                I don't know how I came across this book, but I am glad that I did. It is very graphic all the way through. Although at times it felt like something was missing or felt a little rushed, I enjoyed reading this. I mean mostly enjoyed given the subject matter.
-                Overall if you are looking for gore but in book form, this is definitely up your alley. It is very detailed with a pretty likable main character Vera. I am excited to get my hands on the second book as well!`,
+                text: ``,
                 stars: '★★★★☆',
-                letterboxd: '',
-                fable: 'https://fable.co/review/5539b4d5-beff-46bf-a5fa-1cb036239199/share',
-                storygraph: 'https://app.thestorygraph.com/reviews/89dd9701-f3d4-4d0a-b45f-4c417de7f2e3',
+                fable: '',
+                storygraph: '',
                 linkIcon: storygraphIcon,
             }
         }

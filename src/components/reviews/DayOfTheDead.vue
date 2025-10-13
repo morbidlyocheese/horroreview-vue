@@ -7,16 +7,18 @@
                 <p class="stars">{{ stars }}</p>
             </div>
             <div class="review-text">
-                <p class="text">{{ text }}</p>
+                S1E1
+                <button @click="toggleS1E1" :aria-pressed="showS1E1" :class="{ open: showS1E1 }" aria-label="toggle episode text">￫</button>
             </div>
-            <!-- <a id="serializd-link" :href="serializd" target="_blank"><img id="serializd-link" :src="linkIcon" alt="serializd link" width="50" height="50"></a> -->
+            <p class="text" v-if="showS1E1">{{ s1e1 }}</p>
+            <a id="serializd-link" :href="serializd" target="_blank"><img id="serializd-link" :src="linkIcon" alt="serializd link" width="50" height="50"></a>
         </main>
     </div>
 </template>
 
 <script>
     import coverImg from '../../assets/covers/tv/dotd-s1_poster.jpg'
-    import serializdIcon from '../../assets/thestorygraph.png'
+    import serializdIcon from '../../assets/serializd.png'
 
     export default {
         data() {
@@ -24,7 +26,7 @@
                 cover: 'poster',
                 img: coverImg,
                 title: 'Day Of The Dead',
-                text: `                Just like with the Chucky show, this will most likely be a hit or a miss with horror fans. Anything involving zombies now is honestly like that in my opinion. However, this show is a bit different because it is based off of George A. Romero's films. And on top of that, this show happens to be named after one of his most beloved movies as well. So right off the bat, it has some big shoes to fill. 
+                s1e1: `                Just like with the Chucky show, this will most likely be a hit or a miss with horror fans. Anything involving zombies now is honestly like that in my opinion. However, this show is a bit different because it is based off of George A. Romero's films. And on top of that, this show happens to be named after one of his most beloved movies as well. So right off the bat, it has some big shoes to fill. 
 
                 For me, zombies will always be a favorite subgenre of horror. And although it is a favorite, I still know that a lot of zombie movies tend to be bad. Zombies at this point have been reanimated so many times it is safe to say there's too many films out there. Yet despite all the odds, I still cling to hope that this show will be good. 
 
@@ -32,15 +34,32 @@
 
                 Given it was only the first episode, I still feel like there needs to be some more build up, mainly in the trying to connect to the audience and trying to make them sympathetic towards the characters. But I am hopeful we will get that over time!`,
                 stars: '★★½☆☆',
-                serializd: '',
                 linkIcon: serializdIcon,
-                fable: ''
+                showS1E1: false
+            }
+        }
+        ,
+        methods: {
+            toggleS1E1() {
+                this.showS1E1 = !this.showS1E1
             }
         }
     }
 </script>
 
 <style>
+    button {
+        all: unset;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-left: 0.1rem;
+        vertical-align: middle;
+    }
+
+    button.open {
+        transform: rotate(90deg);
+    }
+
     main {
         display: flex;
         flex-direction: column;

@@ -28,7 +28,6 @@
                 stars: '★★½☆☆',
                 letterboxd: '',
                 linkIcon: letterboxdIcon,
-                fable: ''
             }
         }
     }

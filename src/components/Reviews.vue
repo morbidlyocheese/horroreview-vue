@@ -34,7 +34,7 @@ export default {
             books: [
                 {
                     title: 'The Slob',
-                    author: 'Aaron Beauregard',
+                    author: 'Aron Beauregard',
                     route: '/reviews/the-slob'
                 }
             ],
@@ -48,6 +48,10 @@ export default {
                 {
                     title: 'Day Of The Dead',
                     route: '/reviews/day-of-the-dead'
+                },
+                {
+                    title: 'Chucky',
+                    route: '/reviews/chucky'
                 }
             ]
         }
