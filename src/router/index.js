@@ -26,6 +26,16 @@ const router = createRouter({
         component: () => import('../components/Gifs.vue')
     },
     {
+        path: '/gifs/alien',
+        name: 'alien',
+        component: () => import('../components/gifs/Alien.vue')
+    },
+    {
+        path: '/gifs/vhs-halloween',
+        name: 'vhs halloween',
+        component: () => import('../components/gifs/VHSHalloween.vue')
+    },
+    {
         path: '/reviews/the-slob',
         name: 'the slob',
         component: () => import('../components/book-reviews/TheSlob.vue')
