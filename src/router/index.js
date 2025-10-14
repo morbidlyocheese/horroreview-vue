@@ -28,22 +28,22 @@ const router = createRouter({
     {
         path: '/reviews/the-slob',
         name: 'the slob',
-        component: () => import('../components/reviews/TheSlob.vue')
+        component: () => import('../components/book-reviews/TheSlob.vue')
     },
     {
         path: '/reviews/escape-room-2',
         name: 'escape room 2',
-        component: () => import('../components/reviews/EscapeRoom2.vue')
+        component: () => import('../components/film-reviews/EscapeRoom2.vue')
     },
     {
         path: '/reviews/day-of-the-dead',
         name: 'day of the dead',
-        component: () => import('../components/reviews/DayOfTheDead.vue')
+        component: () => import('../components/tv-reviews/DayOfTheDead.vue')
     },
     {
         path: '/reviews/chucky',
         name: 'chucky',
-        component: () => import('../components/reviews/Chucky.vue')
+        component: () => import('../components/tv-reviews/Chucky.vue')
     }
     ]
 })
