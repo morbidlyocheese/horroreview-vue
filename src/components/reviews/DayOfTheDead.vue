@@ -7,11 +7,11 @@
                 <p class="stars">{{ stars }}</p>
             </div>
             <div class="review-text">
-                S1E1
+                <h2 id="episode-title">S1E1</h2>
                 <button @click="toggleS1E1" :aria-pressed="showS1E1" :class="{ open: showS1E1 }" aria-label="toggle episode text">￫</button>
             </div>
             <p class="text" v-if="showS1E1">{{ s1e1 }}</p>
-            <a id="serializd-link" :href="serializd" target="_blank"><img id="serializd-link" :src="linkIcon" alt="serializd link" width="50" height="50"></a>
+            <a id="serializd-link" :href="serializd" target="_blank"><img id="serializd-link" :src="linkIcon" alt="serializd link" width="40" height="40"></a>
         </main>
     </div>
 </template>
@@ -26,7 +26,8 @@
                 cover: 'poster',
                 img: coverImg,
                 title: 'Day Of The Dead',
-                s1e1: `                Just like with the Chucky show, this will most likely be a hit or a miss with horror fans. Anything involving zombies now is honestly like that in my opinion. However, this show is a bit different because it is based off of George A. Romero's films. And on top of that, this show happens to be named after one of his most beloved movies as well. So right off the bat, it has some big shoes to fill. 
+                s1e1: `
+                Just like with the Chucky show, this will most likely be a hit or a miss with horror fans. Anything involving zombies now is honestly like that in my opinion. However, this show is a bit different because it is based off of George A. Romero's films. And on top of that, this show happens to be named after one of his most beloved movies as well. So right off the bat, it has some big shoes to fill. 
 
                 For me, zombies will always be a favorite subgenre of horror. And although it is a favorite, I still know that a lot of zombie movies tend to be bad. Zombies at this point have been reanimated so many times it is safe to say there's too many films out there. Yet despite all the odds, I still cling to hope that this show will be good. 
 
@@ -48,18 +49,33 @@
 </script>
 
 <style>
+    h2 {
+        color: rgb(128, 200, 251);
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .review-text {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
     button {
-        all: unset;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgb(128, 200, 251);
         cursor: pointer;
         font-size: 1.5rem;
         margin-left: 0.1rem;
         vertical-align: middle;
     }
-
+    
     button.open {
         transform: rotate(90deg);
     }
-
+    
     main {
         display: flex;
         flex-direction: column;
@@ -74,16 +90,11 @@
         gap: 1rem;
         margin-bottom: 1rem;
     }
-
+    
     .stars {
         text-align: center;
     }
-
-    .revew-text {
-        display: flex;
-        place-content: center;
-        margin-top: 1rem;
-    }
+    
 
     #serializd-link {
         margin: 2rem;
@@ -91,7 +102,7 @@
 
     a:hover #serializd-link,
     #serializd-link:hover {
-        filter: invert(50%) sepia(10%) saturate(90%) contrast(30%);
+        filter: invert(0%) sepia(10%) saturate(120%) contrast(30%);
     }
 
     .text {

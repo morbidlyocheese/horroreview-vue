@@ -68,6 +68,7 @@ export default {
     }
 
     h3 {
+        color: #a945a7;
         text-decoration: underline;
         margin: 0 0 0.5rem 0;
     }
