@@ -41,9 +41,24 @@ const router = createRouter({
         component: () => import('../components/book-reviews/TheSlob.vue')
     },
     {
+        path: '/reviews/in-the-hands-of-the-heathens',
+        name: 'in the hands of the heathens',
+        component: () => import('../components/book-reviews/InTheHandsOfTheHeathens.vue')
+    },
+    {
         path: '/reviews/escape-room-2',
         name: 'escape room 2',
         component: () => import('../components/film-reviews/EscapeRoom2.vue')
+    },
+    {
+        path: '/reviews/halloween-kills',
+        name: 'halloween kills',
+        component: () => import('../components/film-reviews/HalloweenKills.vue')
+    },
+    {
+        path: '/reviews/malignant',
+        name: 'malignant',
+        component: () => import('../components/film-reviews/Malignant.vue')
     },
     {
         path: '/reviews/day-of-the-dead',

@@ -36,13 +36,26 @@ export default {
                     title: 'The Slob',
                     author: 'Aron Beauregard',
                     route: '/reviews/the-slob'
-                }
+                },
+                {
+                    title: 'In The Hands Of The Heathens',
+                    author: 'Aron Beauregard',
+                    route: '/reviews/in-the-hands-of-the-heathens'
+                },
             ],
             films: [
                 {
                     title: 'Escape Room: Tournament Of Champions',
                     route: '/reviews/escape-room-2'
-                }
+                },
+                {
+                    title: 'Halloween Kills',
+                    route: '/reviews/halloween-kills'
+                },
+                {
+                    title: 'Malignant',
+                    route: '/reviews/malignant'
+                },
             ],
             tvs: [
                 {
