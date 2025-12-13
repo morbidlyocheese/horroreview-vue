@@ -62,7 +62,7 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        align-items: flex-start;
+        align-items: center;
     }
 
     li {
